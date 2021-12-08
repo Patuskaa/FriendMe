@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+
+<title>TOMÉ</title>
+	
+<link rel="stylesheet" href="../Css/FLOPPY.css">
+	
+</head>
+
+	<!--BARRA DE MENU-->
+	
+	<header>
+		
+		<!--Colocação do logo com link para pagina "HOME"-->
+		<a class="logo" href="../../Html/Home.html"><img src="../../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
+		<nav>
+			<ul class= "nav_links">
+				<li><a href= "../../Html/adocao.html">ADOTAR</a></li>
+				<li><a href= "../../Html/doacao.html">DOAÇÃO</a></li>
+				<li><a href= "../../Html/dicas.html">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
+		<a class="login" href="../../Html/login.html"><button>Login</button></a>
+	
+	</header>
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+<body>
+	<section id= "info">
+		
+		<div class= "titulo">
+			<h1>FLOPPY</h1>
+			<p>Um cão muita energia e brincalhão, perfeito para quem tem crianças por casa.  Tem 8 meses de idade.  Foi abandonado. Floppy aguarda pela sua oportunidade de ter o seu melhor amigo.</p>
+		</div>
+		
+		<div class="personalidade">
+			
+			<h2>Traços de Personalidade</h2>
+			
+			<ul>
+				<li>Brincalhão</li><li>Activo</li><li>Carinhoso</li>
+			</ul> 
+			
+		</div>
+		
+		<!---BOTÃO PARA ADOTAR-->
+		<div class= "button">
+			<a class="login" href="../../Html/Adotar_form.html" title="Formulário de adoção"><button>ADOTAR</button></a>
+		</div>
+	
+	</section>
+	
+	<!---GALERIA DE IMAGENS--->
+	<section id= "galeria">
+	
+		<img id="featured" src="../../Imagem/Floppy.png">
+		
+		<div id="slide-wrapper">
+			
+			<img id="slideLeft" class="arrow" src="../../Imagem/arrow_left.svg" alt="seta esquerda">
+			
+			<div id="slider">
+				
+				<img class="thumbnail active" src="../../Imagem/Floppy.png" alt="foto do Floppy">
+			
+				<img class="thumbnail" src="../../Imagem/floppy1.jpg" alt="foto do Floppy">
+				<img class="thumbnail" src="../../Imagem/floppy2.jpg" alt="foto do Floppy">
+				<img class="thumbnail" src="../../Imagem/floppy3.jpg" alt="foto do Floppy">
+				<img class="thumbnail" src="../../Imagem/floppy4.jpg" alt="foto do Floppy">
+			</div>
+			
+			<img id="slideRight" class="arrow" src="../../Imagem/arrow_right.svg" alt="seta direita">
+		</div>
+		
+	<!-- FUNÇÃO QUE PERMITE MOVER AS IMAGENS DA DIREITA E ESQUERDA, E QUE MOSTRA QUAL A IMAGEM ATIVA É--->
+	<script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+
+	</script>
+		
+		
+		
+	</section>
+	
+</body>
+</html>
