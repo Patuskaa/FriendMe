@@ -1,0 +1,190 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+/* BARRA MENU SUPERIOR*/
+
+li, a, button {
+	font-family: 'Impact';
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+header {
+    display: flex;
+	position:fixed;
+	width: 100%;
+	padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
+}
+
+.logo{
+	width: 15vh;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display:inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s; 
+}
+
+.nav_links li a:hover{
+	color: #298FB5;
+}
+
+/*Botão para login*/
+button {
+	padding: 5px 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+	transition: all 0,3s ease 0s;
+}
+
+button:hover {
+	background-color: #298FB5;
+}
+
+/*//////////////////////////////*/ 
+
+/*SECÇÃO DOAÇÃO */
+
+.caixadoacao{
+    background-color:#FCF2F1;
+    margin: 35vh 5vw 35vh 5vw;
+    padding:20px;
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 600px;
+    width: 500px;
+    height:380px;
+}
+ 
+/* Para ter a imagem com fundo*/
+.caixadoacao:before{
+    background-image: url("../Imagem/cao_doacao.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content:'';
+    position: fixed;
+    left:0;
+    right: 0;
+    top:0;
+    z-index: -1;
+    display: block;
+    filter:blur(2px);
+}
+
+/*CONF. INPUT*/
+.caixadoacao input {
+    margin:10px 0;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Impact';
+	color: #022539;
+	background-color: rgba(105,102,150,0.70);
+}
+
+span{
+	color:#298FB5;
+}
+
+.obrigado{
+	color:#298FB5;
+	padding-bottom: 20px;
+}
+
+/* CONF. BOTÃO*/
+.button{
+    background-color: #FB991C;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    padding: 5px 20px; 
+}
+    
+.button:hover{ 
+    background-color: #298FB5;
+}  
+
+
+/* CONF. da mensagem pop up*/
+#alert{
+	width: 500px;
+	overflow: hidden;
+	background: #FCF2F1;
+	box-shadow: 0 0 20px black;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 9999;
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+
+#alert i{
+	color: #2ecc71;
+	font-size: 4rem;
+	display: block;
+	margin: 20px 0;
+}
+
+#alert h1{
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+
+#alert p{
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	color:#298FB5;
+	padding-bottom: 5vh;
+}
+
+
+/* CONF. BOTÃO com link para homepage*/
+.close{
+	text-align: center;
+	font-size:1rem;
+	margin-top:30px;
+	padding: 5px 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+}

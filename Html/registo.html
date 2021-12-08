@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Css externo-->
+	<link rel="stylesheet" href="../Css/registo.css">
+	
+	<title>Registo</title>
+	
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
+	
+</head>
+
+<body>
+	
+	<!--BARRA DE MENU-->
+	<header>
+		
+		<!--Colocação do logo com link para pagina "HOME"-->
+		<a class="logo" href="Home.html" title="homepage"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
+		<nav>
+			<ul class= "nav_links">
+				<li><a href= "adocao.html" title="animais para adotar">ADOTAR</a></li>
+				<li><a href= "doacao.html" title="doação">DOAÇÃO</a></li>
+				<li><a href= "dicas.html" title="dicas e info">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
+		<a class="login" href="login.html" title="login"><button>Login</button></a>
+	
+	</header>
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	
+	<section id="FORM">
+				
+		<div class= "form">
+			<div class= "registar">
+				
+				<div> 
+					<h1>REGISTAR</h1>
+				</div>
+			</div>
+	
+			<div class= "box">
+				
+				<!--FORMULÁRIO DE REGISTO-->
+				
+				<div class="formulario">
+			 	<form>
+				 	<fieldset>
+						
+						
+						 <legend> Informação Pessoal </legend>
+						
+						
+						<!--- NOME E APELIDO--->
+						
+						<label for= "Nome"><b>Nome*:</label>
+						 	<input type= "text" name= "Nome"> <br>
+						 
+						<label for= "Apelido"><b>Apelido*:</label>
+					 		<input type= "text" name= "Apelido"><br>
+							
+						<!--- GÊNERO--->	
+						
+						<label for= "Genero"><b>Gênero*:</label>
+					 		<input type= "radio" name="genero" value="male"> Masculino 
+						 	<input type= "radio" name= "genero" value="female"> Feminino
+						 	<input type= "radio" name= "genero" value="outro"checked> Outros<br>
+					 	
+						<!--- DATA DE NASCIMENTO--->
+						
+							<!-- Só permite o registo de pessoas maiores de 18 anos-->
+						<label for= "bday"><b>Data de Nascimento*</label>
+						 	<input type= "date" name="bday" max= "2002-01-01" min= "1920-12-31">(Tem de ser +18 anos)<br>
+						 
+						<!--- EMAIL--->
+							
+						<label for= "email"><b>Email*:</label>
+						 	<input type="email" name="email"><br>
+						
+						<!--- TELEFONE--->
+						 
+						<label for= "tel"><b>Telefone:</label>
+						 	<input type="tel" name="telefone"><br>
+							
+						<!--- PASSWORD--->
+					 	
+						<label for= "pswrd"><b>Password*:</label>
+							 <input type="password" name="pswrd"><br>
+				 	
+					
+				</fieldset> <br><br>
+				 
+				 		<!--- MOTIVAÇÃO PARA ADOTAR- ESCALA --->
+							
+					<label for= "motiv"><b>Minha motivação para adotar (0-5):</label>
+				 	<input type="range" name="points" min=0 max=5 class=slider><br><br>
+					
+						<!---TEXT AREA PARA ESCREVER MOTIVO PARA ADOTAR--->
+						
+					<div class= "textarea">
+						<div class="text2">Motivo para adotar</div>
+						<textarea rows="5" cols="50" re></textarea>
+						<input type= "reset" value="APAGAR">
+					 </div>
+						
+						<!--- ACEITAÇÃO DOS TERMOS DE PRIVACIDADE, com link para a pagina dos termos/ abre em nova aba--->
+					<div class= "termos">
+						 <input type="checkbox" name="termos" value="termos">  Ao clicar em REGISTAR, eu aceito todos <a href="TERMOS1.html" target="_blank">Termos e privacidade</a><br>
+					 </div>
+						
+						<!--BOTãO com função de ação para mostrar mensagem de confirmação-->
+					 <a class=button onclick="pop()"> REGISTAR </a> <br><br>
+					 
+				</form>
+				
+				<!--CONTEUDO DA MENSAGEM DE ALERTA-->			
+				
+				<div id= "alert">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<h1> OBRIGADO</h1>
+					<p> O seu registo foi concluido com sucesso</p>
+					<a href="Home.html" title="homepage"type=button class= "close" >OK</a>
+				</div>
+							
+				<!--FUNÇÃO que após clicar no botão abre um pop na página, alterando o display da mensagem no css que permite que de invisivel passa esta a ser visivel-->
+							
+				<script type="text/javascript">
+					var c= 0;
+					function pop(){
+						if (c==0){
+							document.getElementById("alert").style.display = "block";
+							c=1;
+						}else{
+							document.getElementById("alert").style.display = "none";
+							c=0;
+						}
+					}
+							
+							</script>
+		</div>
+	</div>
+</section>
+							
+
+</body>
+</html>

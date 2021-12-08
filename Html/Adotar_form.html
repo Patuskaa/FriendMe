@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- Css externo-->
+	<link rel="stylesheet" href="../Css/adotar_form.css">
+	
+	<title>ADOTAR</title>
+	
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
+
+</head>	
+	
+<body>
+	
+	<!--BARRA DE MENU-->
+	
+	<header>
+		
+		<!--Colocação do logo com link para pagina "HOME"-->
+		<a class="logo" href="Home.html" title="homepage"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
+		<nav>
+			
+			<ul class= "nav_links">
+				<li><a href= "adocao.html" title="animais para adotar">ADOTAR</a></li>
+				<li><a href= "doacao.html" title="doação">DOAÇÃO</a></li>
+				<li><a href= "dicas.html" title="dicas e info">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
+		<a class="login" href="login.html" title="login"><button>Login</button></a>
+	
+	</header>
+	
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	
+</body>
+	
+	
+	<section id="iframe">
+		<div class= "titlef">
+			
+			<h1>ADOÇÃO</h1>
+			<h2>Regulamento de Adoção</h2>
+		
+		</div>
+		
+		<!--IFRAME COM OS TERMOS DE ADOÇÃO-->
+		
+		<div class= "frame">
+			
+			<iframe src="TERMOS.html" title="Termos e Condições">
+			</iframe>
+		
+		</div>
+	
+	</section>
+	
+	
+	
+	<section id= "form">
+		<div class= "forma">
+			
+			<h2>Formulário para adoção</h2>
+			
+			<div class= "caixaform">
+				
+				
+				<!-- FORMULÁRIO PARA ADOÇÃO-->
+				
+				<form>
+					 
+					<fieldset> <legend> Informação Pessoal </legend>
+						
+						<!--NOME E APELIDO-->
+						<label for= "Nome"><b>Nome:</b></label>
+							<input type= "text" name= "Nome"> <br>
+						
+						<label for= "Apelido"><b>Apelido:</b></label>
+							<input type= "text" name= "Apelido"><br>
+						
+						<!--GÊNERO-->
+						<label for= "Genero"><b>Gênero:</b></label>
+							<input type= "radio" name="genero" value="male" > Masculino
+							<input type= "radio" name= "genero" value="female"> Feminino
+							<input type= "radio" name= "genero" value="outro"checked> Outros<br>
+						
+						<!--DATA DE NASCIMENTO-->
+						<label for= "bday"><b>Data de Nascimento:</b></label>
+							<input type= "date" name="bday" max= "2002-01-01" min= "1920-12-31"><br>
+						
+						<!--TIPO DE MORADIA-->
+						<label for= "moradia"><b>Tipo de Moradia:</b></label>
+							<input list="moradia" name="moradia">
+								<datalist id= "moradia">
+									<option value= "t0"></option>
+									<option value= "t1-t2"></option>
+									<option value= "t3 ou mais"></option>
+									<option value= "moradia"></option>
+									<option value= "moradia com terreno"></option>
+								</datalist> <br>
+						
+						<!--MORADA-->
+						
+						<label for= "morada"><b>Morada Completa:</b></label><br>
+							<textarea placeholder="Coloca aqui a sua morada completa" rows="3" cols="100"> </textarea> <br>
+						
+						<!--EMAIL-->
+						
+						<label for= "email"><b>Email:</b></label>
+							<input type="email" name="email"><br>
+						
+						<!--TELEFONE-->
+						
+						<label for= "tel"><b>Telefone:</b></label>
+							<input type="tel" name="telefone"><br>
+						
+						<!--CONTACTO PREFERENCIAL-->
+						
+						<label for= "contpref"><b>Contacto Preferencial:</b></label>
+							<input type= "checkbox" name="contpref" value="Email">Email
+							<input type= "checkbox" name="contpref" value="chamada">Chamada
+							<input type= "checkbox" name="contpref" value="Mensagem">Mensagem <br>
+					
+					</fieldset>
+					
+					<fieldset> <legend> Experiência com animais </legend>
+						
+						<!--EXP COM ANIMAIS-->
+						
+						<label for= "expanimal"><b>Tem alguma experiência com algum destes animais?:</label>
+							</br>
+							<input type= "checkbox" name="expanimal" value="cao">cães
+							<input type= "checkbox" name="expanimal" value="gato">gatos
+							<input type= "checkbox" name="expanimal" value="outro">outros <br>
+						
+						
+						<!--ANIAMIS?-->
+						
+						<label for= "pet"><br>Tem algum destes animais em casa?:</label>
+						</br>
+							<input type= "checkbox" name="pet" value="cao">cães
+							<input type= "checkbox" name="pet" value="gato">gatos
+							<input type= "checkbox" name="pet" value="outro">outros <br>
+					
+					</br>
+						
+						<!--COMENTARIOS-->
+						<label for= "obs"><b>Observações:</b></label><br>
+							<textarea placeholder="Escreva sobre a sua experiência com animais" rows="5" cols="30"> </textarea> <br>
+							
+					</fieldset>
+						
+					<fieldset> <legend> Animal a adotar:</legend>
+						
+						<!--ANIMAL PARA ADOTAR-->
+						
+						<label for= "animal"><b>Animal a adotar:</b></label>
+							<select name= "Animal">
+								<option value="Gaya">Gaya</option>
+        						<option value="Floppy">Floppy</option>
+						        <option value="tome">Tome</option>
+        						<option value="noe">Noe</option> 
+        						<option value="flora">Flora</option>
+        						<option value="turco">Turco</option>
+       		 					<option value="maia">Maia</option>
+        						<option value="teco">Teco</option>
+        						<option value="yoshi">Yoshi </option> 
+        						<option value="luna">Luna</option>
+        						<option value="tarzan">Tarzan</option>
+        						<option value="voldemort">Voldemort </option>
+       						 </select> <br>
+						
+						<!--COR PREFERIDA-->
+    
+        				<label for= "cor"><b>Cor preferencial:</b></label> 
+        					<input type= "color">
+						<br><span>O animal a adotar será-lhe entregue com um laço da sua cor preferida. </span> 
+						<br><br>
+						
+						</fieldset>
+				</form>
+			</div>
+			
+			<!--BOTAO PARA ABRIR POP UP-->	
+			<div class= "button1">
+				<a class="button" onclick="pop()"> ADOTAR </a>
+			</div>
+			
+			<!--POP UP-->
+			<div id= "alert">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<h1> OBRIGADO</h1>
+					<p>Entraremos em breve em contacto</p>
+					<a href="Home.html"type=button title="homepage" class= "close" >OK</a>
+			</div>
+			
+			<!--FUNÇÃO QUE torna o pop-up visivel-->
+			<script type="text/javascript">
+					var c= 0;
+					function pop(){
+						if (c==0){
+							document.getElementById("alert").style.display = "block";
+							c=1;
+						}else{
+							document.getElementById("alert").style.display = "none";
+							c=0;
+						}
+					}
+							
+				</script>
+		</div>
+	</section>
+	
+
+</html>
+	

@@ -1,0 +1,355 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color:#FCF2F1;
+	font-family: "Constantia";
+	font-size: 1rem;
+	font-weight: 800;
+	
+}
+
+
+/* BARRA MENU SUPERIOR*/
+
+li, a, button {
+	font-family: 'Impact';
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+header {
+    display: flex;
+	position:fixed;
+	width: 100%;
+	padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
+}
+
+.logo{
+	width: 15vh;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display:inline-block;
+	padding: 0px 20px;
+}
+
+.login {
+	transition: all 0.3s ease 0s;
+	
+}
+
+.login:hover{
+	color: #298FB5;
+}
+
+button {
+	padding: 5px 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+	transition: all 0,3s ease 0s;
+}
+
+button:hover {
+	background-color: #298FB5;
+}
+
+/*//////////////////////////////*/ 
+
+
+/* SECÇÃO DE REGISTO////////*/
+
+
+/*fundo*/
+section{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 5vw;
+	align-items: center;
+	background-image:url("../Imagem/gato_registo.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+
+.registar{
+	display: flex;
+	float: left;
+	margin-top: 15vh;
+	width: 100%;
+	height: 5%;
+}
+
+/*TITULO/*/ 
+
+.registar h1{
+	display: inline;
+	padding: 10vw;
+	background-color: transparent;
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+/*CAIXA DO FORMULÁRIO SEMITRANSPARENTE*/
+.box{
+	float: left;
+	margin: 3vh auto;
+	max-width: 600px;
+	padding: 20px;
+	border-radius: 20px;
+	background: rgba(60,60,80,0.70);
+}
+
+/* LEGENDA DO FIELDSET*/
+
+legend{
+	padding-left: 20px;
+	font-family: 'impact';
+	font-size: 2rem;
+	font-weight: 600;
+	color: #FCF2F1;
+	line-height: 50px;
+}
+
+/*Determina o espaço entre diferentes itens*/
+label{
+	padding-left:20px;
+	line-height: 40px;
+}
+
+/*Configuração dos inputs*/
+
+input{
+	margin-left: 20px;
+	border:none;
+	font-family: 'constantia';
+	font-weight: 200;
+	color: #022539;
+	border-radius: 12px;
+	background: rgba(252,242,241,0.25);
+}
+
+/*Altera a sua configuração quando utilizado*/
+input:focus{
+	background:#022539;
+	color:#FCF2F1;
+	border-color:transparent;
+}
+
+
+input[type="text"]{
+	cursor: text;
+	width: 95%;
+	padding: 5px;
+}
+
+	
+input[type="radio"]{
+	cursor: pointer;
+	width: 50px;
+}
+
+input[type="date"]{
+	cursor: pointer;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 20px;
+	color:#FCF2F1;
+}
+
+input[type="email"]{
+	cursor: text;
+	width: 95%;
+	padding: 5px;
+}
+
+input[type="tel"]{
+	cursor: text;
+	width: 95%;
+	padding: 5px;
+}
+
+input[type="password"]{
+	cursor: text;
+	width: 95%;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+
+
+/*conf. da escala de motivação*/
+
+.slider {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 5px;
+  border-radius: 20px;  
+  background: #FCF2F1;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #022539;
+  cursor: pointer;
+}
+
+/*conf. da "bolinha da escala de motivação*/
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FCF2F1;
+  cursor: pointer;
+}
+
+
+/*CONF. da zona da textarea*/
+
+.textarea{
+	padding-left: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 800;
+	line-height: 30px;
+	
+}
+
+/*CONF. da textarea*/
+textarea{
+	border:none;
+	border-radius: 10px;
+	color: #022539;
+	font-size: 0.8rem;
+	padding: 5px 10px;
+	background: rgba(252,242,241,0.25);
+}
+
+
+/*CONF. do botão de reset */
+input[type="reset"]{
+	padding: 5px 25px;
+	border-radius: 50px;
+	border: none;
+	background-color:#FB991C;
+	font-family: 'impact';
+	letter-spacing: 1px;
+	color:#FCF2F1;
+	cursor: pointer;
+	transition: all 0,3s ease 0s;
+}
+
+/*CONF. da zona da aceitação dos termos*/
+.termos{
+	padding: 2vh 2px 2vh 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 800;
+	color: #FCF2F1;
+	line-height: 30px; 
+}
+
+/*CONF. do link para os termos de privacidade*/
+.termos a{
+	font-family: "Constantia";
+	font-size: 1rem;
+	text-decoration: underline;
+	color:#022539;
+	cursor:pointer;
+}
+
+/*CONF. do botão de registo*/
+.button{
+	margin-top:40px;
+	padding: 5px 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+	transition: all 0,3s ease 0s;
+}
+
+.button:hover {
+	background-color: #298FB5;
+}
+
+
+/*CONF. da mensagem pop up de confirmação*/
+#alert{
+	width: 500px;
+	overflow: hidden;
+	background: #FCF2F1;
+	box-shadow: 0 0 20px black;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 9999;
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+
+#alert i{
+	color: #2ecc71;
+	font-size: 4rem;
+	display: block;
+	margin: 20px 0;
+}
+
+#alert h1{
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+
+#alert p{
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	color:#298FB5;
+	padding-bottom: 5vh;
+}
+
+/*Conf. do botão para fechar o popup e ir para a homepage*/
+.close{
+	text-align: center;
+	font-size:1rem;
+	margin-top:30px;
+	padding: 5px 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+}
+

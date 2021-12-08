@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- Css externo-->
+	<link rel="stylesheet" href="../Css/doacao.css">
+	
+	<title>Doação</title>
+	
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
+	
+	
+</head>
+
+<body>
+
+<!--BARRA DE MENU-->
+	
+	<header>
+		
+		<!--Colocação do logo com link para pagina "HOME"-->
+		<a class="logo" href="Home.html" title="homepage"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
+		<nav>
+			<!--Barra de menu com a lista de todos os itens de navegação-->
+			<ul class= "nav_links">
+				<li><a href= "adocao.html" title="animais para adotar">ADOTAR</a></li>
+				<li><a href= "doacao.html" title="doação">DOAÇÃO</a></li>
+				<li><a href= "dicas.html" title="dicas e info">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
+		<a class="login" href="login.html" title="login"><button>Login</button></a>
+	
+	</header>
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	<!--Caixa de texto sobre a doação-->
+	
+	<div class= "caixadoacao">
+    
+		<p> A "Friend Me?" tem o hábito de realizar campanhas de recolha de alimentos e objetos para animais de estimação </p>
+		
+		<p> Aceitamos qualquer tipo de doação, caso queira contribuir monetariamente, eis o nosso <span>IBAN: 0045 00678943 0034 08</span></p>
+		
+		<p>Para receber informação acerca das nossas campanhas, por favor, escreva o seu e-mail:</p>
+    
+		<!--FORMULÁRIO PARA RECOLHA DE INFO PARA DOAÇÃO-->
+		
+		<form>
+			<input type="email" name="email" placeholder="escreva aqui o seu email">
+    
+			<p>Necessitamos sempre de quem possa tornar-se FAT (Família de Acolhimento Temporário).</p>
+			<p>Caso esteja interessado, escreva o seu contacto telefónico:</p>
+    
+			<input type="tel" name="telefone" placeholder="escreva aqui o seu contacto"><br>
+
+			<div class= "obrigado">
+				<p>Muito Obrigado</p>
+			</div>
+			
+			<!--Botáo que ao clicar abre um pop de confirmação-->
+			 <a class=button onclick="pop()"> Quero Contribuir </a> <br><br>
+					 
+		</form>
+				
+		<!--MENSAGEM DE POP UP--->
+		
+		<div id= "alert">
+			<i class="fa fa-check" aria-hidden="true"></i>
+			<h1> OBRIGADO</h1>
+			<p> Iremos em breve entrar em contacto...</p>
+			<a href="Home.html"type=button title="homepage" class= "close" >OK</a>
+		</div>
+		
+		
+		<!--função que ao clicar no botão permite que a mensagem que estava invisivel (display: none) se torne visivel (displya: block), alterando o style-->
+		
+		<script type="text/javascript">
+			var c= 0;
+			function pop(){
+				if (c==0){
+					document.getElementById("alert").style.display = "block";
+					c=1;
+				}else{
+					document.getElementById("alert").style.display = "none";
+					c=0;
+				}
+			}
+							
+		</script>
+		</form>
+    </div>
+	
+</body>
+</html>

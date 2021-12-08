@@ -1,0 +1,24 @@
+.dicas_container{
+	min-height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items:flex-start;
+	justify-content: center;
+	background-color:#022539;
+	background-position: top center;
+	background-size: cover;
+}
+
+.dicas_container h1{
+	display:block;
+	background-color: transparent;
+	padding-top: 10vh;
+	padding-left: 5vw;
+	padding-bottom: 5vh;
+	padding-right: 30%;
+	font-family: 'impact';
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #FCF2F1;

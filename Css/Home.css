@@ -1,0 +1,635 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+/* BARRA MENU SUPERIOR*/
+
+li, a, button {
+	font-family: 'Impact';
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+header {
+    display: flex;
+	position:fixed;
+	width: 100%;
+	padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
+}
+
+.logo{
+	width: 15vh;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display:inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s; 
+}
+
+.nav_links li a:hover{
+	color: #298FB5;
+}
+
+button { 
+	padding: 5px 25px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+	transition: all 0,3s ease 0s;
+}
+
+button:hover {
+	background-color: #298FB5;
+}
+
+/*//////////////////////////////*/ 
+
+
+/* Config- Barra inferior*/
+
+.navbar2{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 9vh;
+	padding: 10px 15px 10px 15px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FB991C;
+}
+
+.navbar2 a {
+	background-color:#FB991C;
+	font-family: 'Constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	text-decoration: none;
+	color: #022539;
+	transition: all 0.3s ease 0s; 
+}
+
+.navbar2 a:hover{
+	color: #FCF2F1; 
+}
+
+/*//////////////////////////////*/ 
+
+
+
+/*Conf. REGISTO secção////*/
+
+/*Imagem de fundo*/
+.registo_container{
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: left;
+	background-image: url("../Imagem/gatocinza_home.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+.registo_container h1{
+	display:block;
+	padding: 10vw;
+	background-color: transparent;
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+
+/*conf do butao de registo*/
+#registo .cta{
+	display:inline-block;
+	margin-left: 10vw;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	border:none;
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	color: #FCF2F1;
+	cursor:pointer;
+	transition: all 0.3s ease 0s;
+}
+
+#registo .cta:hover{
+	background-color:#298FB5;
+}
+
+/*//////////////////////////////*/ 
+
+
+
+/* SECÇÃO dos animais disponivei// */ 
+
+#animais{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 2% 2%;
+	background-color:#022539;
+}
+
+
+/* TITULO DA SECÇÃO*/
+
+
+.titulo{
+	margin-left: 10vw;
+	padding: 3vh;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.titulo h1{
+	display:block;
+	text-align: center;
+	font-family: 'impact';
+	font-size: 4rem;
+	font-weight: 800;
+	color:#FCF2F1;
+	letter-spacing:.1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+
+/*butão nossos animais*/
+
+#animais .ctb{
+	display:inline-block;
+	width: 40%;
+	margin: 5vh 30% 0 30%;
+	padding: 10px 30px; 
+	text-align: center;
+	border-radius: 50px;
+	border:none;
+	background-color:#FB991C;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #FCF2F1;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+#animais .ctb:hover{
+	background-color:#298FB5;
+}
+
+
+/*conf. LISTA DE ANIMAIS BOX*/
+
+.ani-grid{
+	display: block;
+	width: 100%;
+	margin: 20px 0 0 0;
+	list-style: none;
+	text-align: center; 
+}
+
+.ani-grid:after{
+	clear:both; /* para não sobrepor*/
+}
+
+.ani-grid:after, .ani-grid:before{
+	content:"";
+	display:table; /*comporta-se como uma tabela*/
+}
+
+.ani-grid li{
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	margin:20px;
+}
+
+
+/*conf. das caixas dos animais*/
+.ani-box{
+	display:inline-grid;
+	width: 100%;
+	height:100%;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out,;
+}
+
+.ani-box:hover{
+	transform:scale(1.05);
+}
+
+
+
+/* img dos animais*/
+
+.ani-gaya{
+	background-image: url("../Imagem/gaya.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.ani-tome{
+	background-image: url("../Imagem/tomé.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.ani-floppy{
+	background-image: url("../Imagem/Floppy.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.ani-noe{
+	background-image: url("../Imagem/noe.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+
+/*conf. do texto da caixa*/ 
+
+.ani-info{
+	margin-top:415px;
+	width: inherit;
+	height: inherit;
+	background-color:#298FB5; 
+}
+
+.ani-info h3{
+	margin: 0 30px;
+	padding: 2px 0 0 0;
+	font-family:'impact';
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #FCF2F1;
+	line-height: 1.5
+}
+
+.ani-info p{
+	margin: 0;
+	padding: 2px 2px;
+	background-color: #FCF2F1;
+	font-family: 'constatia';
+	font-size: 1.5rem;
+	color: #022539;
+	line-height: 2;
+}
+
+/*//////////////////////////////*/ 
+
+
+
+/* Conf. secção sobre nós*/ 
+
+.sobre_container{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	align-items:flex-start;
+	justify-content: left;
+	background-image: url("../Imagem/cao_doacao.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+.text_container{
+	display: inline-block;
+	width: 46%;
+	min-height: 100vh;
+	align-items:flex-start;
+	justify-content: left;
+}
+
+.text_container h1{
+	display:block;
+	padding: 5vh 5vw 5vh 5vw;
+	background-color: transparent;
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+.text_container h3{
+	display: block;
+	padding: 1vh 5vw 3vh 5vw;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 800;
+	text-decoration: none;
+	color:#022539;
+}
+
+.text_container p{
+	display: block;
+	padding: 1.5vh 5vw 3vh 5vw;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+	color:#022539;
+}
+
+
+/*conf do butao de doação*/
+#sobre .ctc{
+	display:inline-block;
+	margin: 3vh 5vw 3vh 5vw;
+	padding: 10px 30px 10px 30px; 
+	border-radius: 50px;
+	border:none;
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	text-align: center;
+	color: #FCF2F1; 
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+#sobre .ctc:hover{
+	background-color:#298FB5;
+}
+/*//////////////////////////////*/ 
+
+
+/*/Conf. dicas*/ 
+
+.dicas_container{
+	display: flex;
+	width: 100%;
+	min-height: 30vh;
+	align-items:center;
+	justify-content: center;
+	background-color:#022539;
+	background-position: top center;
+	background-size: cover;
+}
+
+.dicas_container h1{
+	display:block;
+	padding: 10vh 5vw 5vh 5vw;
+	background-color: transparent;
+	font-family: 'constantia';
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+
+/*conf do butão dicas*/
+
+.dicas_container a{
+	display:inline-block;
+	margin: 3vh 25px 0 0;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	border:none;
+	background-color:#FB991C;
+	font-size: 1.5rem;
+	color: #FCF2F1; 
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.dicas_container a:hover{
+	background-color:#298FB5;
+}
+ 
+/*//////////////////////////////*/ 
+
+
+/*Conf. Parcerias*/ 
+
+.parceria_container {
+	display:flex;
+	width: 100%;
+	min-height: 70vh;
+	align-items:center;
+	justify-content: center;
+	background-color: #FB991C;
+	background-position: top center;
+	background-size: cover;
+}
+
+.list_container{
+	display: block;
+	width:50%;
+	min-height: 70vh;
+	align-content: center;
+	text-align: left;
+	background-color: transparent;
+	background-position: top center;
+	background-size: cover;
+}
+
+.parceria_container h2{
+	display:block;
+	padding: 10vh 0 5vh 5vw;
+	background-color: transparent;
+	font-family: 'constantia';
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing:.1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#022539;
+}
+
+.parceria_container ol li{
+	list-style-position: inside;
+	padding: 1.5vh 0 3vh 5vw;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 500;
+	color:#FCF2F1;
+}
+
+/*conf. do mapa*/
+
+.map_container{
+	display:inline-block;
+	width: 50%;
+	max-width: 700px;
+	max-height: 500px;
+}
+
+.mapa{
+	width:100%;
+}
+
+/*//////////////////////////////*/ 
+
+
+
+/*/conf. do footer- secção de contactos*/
+
+footer{
+	bottom: 0px;
+	width: 100%;
+	height: 50vh;
+	background-color: #022539;
+}
+
+.left_box{
+	display:block;
+	float:left;
+	width: 50%;
+	background-color:#022539;
+	
+}
+
+.content{
+	padding: 10vh 0 5vh 5vw;
+}
+
+.content h2{
+	display:block;
+	font-family:'impact';
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color:#FB991C;
+}
+
+.text1{
+	padding: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	text-decoration: none;
+	color: #FCF2F1;
+	line-height: 2;
+}
+
+.fa-envelope{
+	color:#FB991C; 
+}
+
+.fa-phone{
+	color:#FB991C; 
+}
+
+.fa-map-marker{
+	color:#FB991C; 
+}
+
+.fa-facebook{
+	color:#3b5998; 
+}
+
+.fa-instagram{
+	color:#e4405f; 
+}
+
+.fa-twitter{
+	color: #55acee; 
+}
+
+
+.social{
+  margin: 20px 0 0 0;
+}
+.social a{
+	padding: 0 2px;
+}
+.social a span{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.social a span:hover{
+	background:#298FB5 ;
+}
+
+
+
+.right_box{
+	display: inline-block;
+	float:right;
+	width: 50%;
+	background-color:#022539;
+}
+
+
+.right_box h2{
+	display:inline-block;
+	font-family:'impact';
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#FB991C;
+	letter-spacing:.1rem;
+}
+
+.content2{
+	padding: 10vh 15vw 5vh 0;
+}
+
+.text2{
+	padding: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+input{
+	border-radius: 50px; 
+	border-color: transparent;
+}
+
+textarea{
+	border-radius: 50px; 
+	border-color: transparent;
+}
+
+/*//////    FIM    ////////////////////////*/ 
+	
+
+
+
+
+

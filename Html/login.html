@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Css externo-->
+	<link rel="stylesheet" href="../Css/login.css">
+	
+	<title>Login</title>
+	
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
+	
+
+</head>
+
+<body>
+	
+<!--BARRA DE MENU-->
+	<header>
+		
+		<!--Colocação do logo com link para pagina "HOME"-->
+		<a class="logo" href="Home.html" title="homepage"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
+		<nav>
+			<ul class= "nav_links">
+				<li><a href= "adocao.html" title="animais para adoção">ADOTAR</a></li>
+				<li><a href= "doacao.html" title="doação">DOAÇÃO</a></li>
+				<li><a href= "dicas.html" title="dicas e info">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
+		<a class="login" href="login.html" title="login"><button>Login</button></a>
+	
+	</header>
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	
+</body>
+	
+<!-- Caixa de LOGIN-->	
+<div class= "caixalogin">
+     <div class= "titulologin" >LOGIN  </div>
+    
+	<!-- FORMULÁRIO DE LOGIN-->
+	<form>
+		
+		<!--email--->
+		<input type="email" name ="email" placeholder= "Escreva aqui seu email">
+		
+		<!--password--->
+		<input type="password" name="pswrd" placeholder= "Crie uma password" id="myInput">
+		
+		<!--para mostrar a password--->
+		<input type="checkbox" onclick="myFunction()">Mostrar Password
+		
+		
+		<!--Se carregar na checkbox vai acionar a seguinte função, ela retira o que foi inscrito no input password e transforma-o em texto-->
+		
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myInput");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+			}
+		</script>
+		
+		
+		<!--Secção de caso tenha perdido a password, sem link-->
+		<div class ="psw"> Esqueci-me da minha <a href="#">password?</a> </div>
+		
+		<!--Botão de conclusão do form, o botão não tem o tipo "submit" porque leva a um erro 404notfound com o alerta-->
+		<a class=button onclick="pop()"> LOGIN </a>
+		
+		<!--CONF. DO POP ULP DE CONFIRMAÇÃO-->
+		<div id= "alert">
+			<i class="fa fa-check" aria-hidden="true"></i>
+			<h1> OLÁ</h1>
+			<p>Seja Bem-vindo de volta</p>
+			<a href="Home.html"type=button title="homepage" class= "close" >OK</a>
+		</div>
+							
+			
+		
+		<!--FUNÇÃO para quando carrega no botão surge uma mensagem pop up que antes estava invisivel (display:none) e que altera o style para vísivel (display:block)-->
+		<script type="text/javascript">
+			var c= 0;
+			function pop(){
+				if (c==0){
+					document.getElementById("alert").style.display = "block";
+					c=1;
+				}else{
+					document.getElementById("alert").style.display = "none";
+					c=0;
+				}
+			}
+							
+		</script>
+		
+     
+	</form>
+     
+	
+	<!--SECÇÃO REFERENTE AO REGISTO, caso o utilizador não esteja registado-->
+	
+     <div class= "caixaregistar">
+         <div class= "registo" > Ainda não esá registado? </div>
+		
+		 <!-- butão com link para a página de regisot-->
+         <a href="registo.html" title="registo" type=button class= "registar" >REGISTAR</a> 
+	</div>
+</div>
+</html>
